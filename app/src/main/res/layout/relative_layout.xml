@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="@string/welcome_message"
+        android:textAllCaps="true"/>
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/welcome_msg"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/course_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_message"
+                android:textAllCaps="true"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/edit_course_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/course_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edit_course_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/course_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edit_course_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/course_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edit_course_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/course_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edit_course_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/course_hint"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/units_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/units_message"
+                android:textAllCaps="true"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/edit_unit_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unit_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edit_unit_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unit_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edit_unit_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unit_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edit_unit_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unit_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edit_unit_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unit_hint"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/grade_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grade_message"
+                android:textAllCaps="true"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/edit_grade_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/grade_hint"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/edit_grade_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/grade_hint"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/edit_grade_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/grade_hint"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/edit_grade_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/grade_hint"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/edit_grade_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/grade_hint"
+                android:inputType="textCapCharacters" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_gpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_calc"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/bt_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"/>
+
+</RelativeLayout>

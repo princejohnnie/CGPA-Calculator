@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GP Calculator</string>
+
+    <string name="welcome_message">Welcome to the CGPA Calculator App</string>
+    <string name="course_message">course</string>
+    <string name="units_message">unit</string>
+    <string name="grade_message">grade</string>
+    <string name="course_hint">Enter course</string>
+    <string name="unit_hint">Enter unit</string>
+    <string name="calculate">Calculate</string>
+    <string name="grade_hint">Enter Grade</string>
+    <string name="gpa_message">Your Grade Point Average is</string>
+    <string name="null_input_error_message">Please Enter your Grades and coressponding Units</string>
+</resources>
